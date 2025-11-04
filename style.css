@@ -1,0 +1,61 @@
+:root {
+    --cor-fundo: linear-gradient(135deg, #fd2bf2, #d1c40c, #d86c06); /* Adicionei ciano para mais vibe Miami */
+    --cor-principal: #040a3b;
+    --cor-secundaria: #400ba3;
+    --cor-destaque: #fd2b2b;
+    --cor-texto: #D7F9FF;
+}
+
+body {
+    background: var(--cor-fundo); /* Corrigi de background-color para background */
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Inter", sans-serif;
+    margin: 0; /* Garante que não haja margens indesejadas */
+    background-attachment: fixed; /* Faz o degradê ficar fixo ao rolar */
+}
+
+.caixa-principal {
+    background-color: var(--cor-principal);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+}
+
+.caixa-perguntas {
+    margin-bottom: 15px;
+    line-height: 1.5em;
+}
+
+h1 {
+    color: var(--cor-destaque);
+}
+
+button {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    transition: background-color 0.3s;
+    margin: 5px;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+
+}
+
+.texto-resultado b {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    color: var(--cor-destaque);
+    line-height: 1.5em;
+}
